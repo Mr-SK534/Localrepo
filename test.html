@@ -1,0 +1,18 @@
+<html>
+<head>
+    <style>
+        body {
+            counter-reset: sectio;
+        }
+        h2::before {
+            counter-increment: sectio;
+            content: "Section " counter(sectio) ": ";
+        }
+    </style>
+</head>
+<body>
+    <h2>Pizza</h2>
+    <h2>Hamburger</h2>
+    <h2>Hotdogs</h2>
+</body>
+</html>
